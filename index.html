@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Checkout</h1>
+        <div id="container">
+            <div id="item-container">
+                <form action="" method="get">
+                    <h3>Contact information</h3>
+                    <p>Email</p>
+                    <div class="form-div">
+                    <label for="email">
+                    <img class="form-img" src="https://static.thenounproject.com/png/1569864-200.png" alt="mail icon">
+                    <input required pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" type="email" id="email" placeholder="Enter your email...">
+                </label>
+                </div>
+                    <p>Phone</p>
+                    <div class="form-div">
+                    <label for="number">
+                    <img class="form-img" src="https://static.thenounproject.com/png/5206700-200.png" alt="phone icon">
+                    <input type="number" id="number" placeholder="Enter your phone...">
+                </label>
+                </div>
+                <br>
+                    <h3>Shipping address</h3>
+                    <p>Full Name</p>
+                    <div class="form-div">
+                    <label for="name">
+                    <img class="form-img" src="https://static.thenounproject.com/png/3635846-200.png" alt="name icon">
+                    <input required type="text" name="name" id="name" placeholder="Enter your Full name...">
+                </label>
+                </div>
+                    <p>Address</p>
+                    <div class="form-div">
+                    <label for="address">
+                    <img class="form-img" src="https://static.thenounproject.com/png/13878-200.png" alt="address icon">
+                    <input required type="text" id="address" placeholder="Enter your address...">
+                </label>
+                </div>
+                    <p>City</p>
+                    <div class="form-div">
+                        <label for="city">
+                        <img class="form-img" src="https://static.thenounproject.com/png/3464209-200.png" alt="city icon">
+                    <input required type="text" name="city" id="city" placeholder="Enter your city...">
+                </label>
+                </div>
+                <div class="form-container" style="display:flex;">
+                    <div>
+                        <div style="display: flex;">
+                        <p>Country</p>
+                        <span style="margin-left: 110px; margin-top: 14px;">Post Code</span>
+                    </div>
+                    <div class="post">
+                        <div style="border: 1px solid gray; border-radius: 5px; width: 90px;">
+                            <img style="margin-top: 6px;" class="form-img" src="https://static.thenounproject.com/png/17084-200.png" alt="Globe icon">
+                            <select style="width: 70px; text-align: right;" name="country" id="country">
+                            <option value="Turkey">Turkey</option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Sweden">Germany</option>
+                        </select>
+                        </div>
+                        <div class="form-div">
+                            <img class="form-img" src="https://static.thenounproject.com/png/647313-200.png" alt="post icon">
+                            <input required type="text" placeholder="Enter your postal code...">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <label for="checkbox">
+                <input style="margin-top: 30px;" type="checkbox" id="checkbox"><span style="margin-left: 20px;"><del>See</del> This information next time</span>
+            </label>
+                <input id="submit" type="submit" value="Continue">
+            </form>
+        </div>    
+        <div id="parent">
+            <div class="container">
+                <div>
+                    <img class="list-img" src="backbag.png" alt="">
+                </div>
+                <div style="margin-top: 20px; margin-left: 7px;">
+                    <span style="font-weight: bold;">Vintage Backbag</span>
+                        <p><Span>$54.99</Span> <del>$94.99</del></p>
+                        <div class="btn-container">
+                            <div class="btn">
+                                <button style="margin-right: 7px; width: 21px;">-</button>
+                                <span>1</span>
+                                <button style="margin-left: 7px; width: 21px;">+</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div>
+                            <img class="list-img" src="shoes.png" alt="">
+                        </div>
+                        <div style="margin-top: 20px; margin-left: 7px;">
+                            <span style="font-weight: bold;">Levi Shoes</span>
+                            <p><span>$74.99</span> <del>$124.99</del></p>
+                            <div class="btn-container">
+                                <div class="btn">
+                                    <button style="margin-right: 7px; width: 21px;">-</button>
+                                    <span>1</span>
+                                    <button style="margin-left: 7px; width: 21px;">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-top: 1px solid gray; margin-top: 44px; margin-left: 30px; width:270px">
+                        <span style="margin-left: 5px; font-weight: bold;">Shipping</span>
+                        <span style="margin-left: 170px; font-weight: bold;">$19</span>
+                    </div>
+                    <div style="border-top: 1px solid gray; margin-top: 14px; margin-left: 30px; width:270px">
+                        <span style="margin-left: 5px; font-weight: bold;">Total</span>
+                        <span style="margin-left: 160px; font-weight: bold;">$148.98</span>
+                    </div>
+                    </div>
+                </div>
+</body>
+</html>
