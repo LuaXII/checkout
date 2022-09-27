@@ -113,3 +113,7 @@ p > span {
     width: 340px;
     height: 30px;
 }
+
+#submit:hover {
+    cursor: pointer,
+}
